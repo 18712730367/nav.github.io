@@ -6407,7 +6407,7 @@ button.toast-close-button {
     position: relative;
     background: #fff;
     margin-bottom: 0px;
-    padding: 15px
+    padding: 3px auto
 }
 
 .xe-widget.xe-conversations .xe-bg-icon {
