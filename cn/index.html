@@ -136,7 +136,7 @@
         </div>
         <div class="main-content">
             <nav class="navbar user-info-navbar" role="navigation">
-                <ul class="user-info-menu left-links list-inline list-unstyled" style="height: 27px;">
+                <ul class="user-info-menu left-links list-inline list-unstyled" style="height: 29px;margin-top:3px">
                     <li class="hidden-sm hidden-xs">
                         <a href="#" data-toggle="sidebar">
                             <i class="fa-bars"></i>
@@ -158,6 +158,12 @@
                                 </a>
                             </li>
                         </ul>
+                    </li>
+                    <li style="margin-top: 7px; margin-left: 10px;">
+                      <span>诗词赏析： </span>
+                      <span id="jinrishici-sentence" style="color: #7B68EE	">
+                        正在加载今日诗词....
+                      </span>
                     </li>
                 </ul>
                 <ul class="user-info-menu right-links list-inline list-unstyled" style="height: 27px;margin-right: 10px;">
@@ -182,7 +188,8 @@
             <div class="container" id="app">
                 <div class="engine-box">
                     <div v-bind:class="isActive==index?'engine-on':'engine-off'" @click="swapEngine(index)"
-                        v-for="(item,index) of searchEngine">{{item.name}}</div>
+                        v-for="(item,index) of searchEngine">{{item.name}}
+                      </div>
                 </div>
                 <div class="search-box">
                     <input type="text" class="search-input" v-model="searchStr" @keyup.enter="search" placeholder="输入你想查询的内容">
@@ -756,6 +763,7 @@
     <script src="../assets/js/lozad.js"></script>
     <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
     <script src="../assets/js/my.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 </body>
 
 </html>

@@ -80,9 +80,11 @@ body{
     margin-top:15px;
 }
 .sug-box{
-    width: 80%;
-    background-color: #fff9;
+    width: 60%;
+    background-color: #F5F5F5;
     margin-top: 20px;
+    position: fixed;
+    z-index: 9999;
 }
 .sug-box div{
     border-bottom: 1px solid #fffa;
